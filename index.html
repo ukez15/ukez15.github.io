@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ukelabuchi — Senior Cloud &amp; Platform Engineer</title>
+<meta name="description" content="Ukelabuchi is a senior cloud and platform engineering professional based in Ireland, focused on DevSecOps, security architecture, and resilient infrastructure.">
+<meta property="og:title" content="Ukelabuchi — Senior Cloud & Platform Engineer">
+<meta property="og:description" content="Ten-plus years in cloud architecture, security, and DevSecOps. Based in Ireland.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #ffffff;
+    --ink: #000000;
+    --slate: #545454;
+    --hairline: #dcdcdc;
+    --fog: #f6f6f6;
+    --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--ink); }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ---------- header ---------- */
+
+  header {
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .nav {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav .name {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.15rem;
+    text-decoration: none;
+  }
+
+  .nav .links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .nav .links a {
+    text-decoration: none;
+    font-size: 0.92rem;
+    color: var(--slate);
+  }
+
+  .nav .links a:hover { color: var(--ink); }
+
+  /* ---------- hero ---------- */
+
+  .hero {
+    padding: 88px 0 56px;
+  }
+
+  .hero .role {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--slate);
+    margin: 0 0 18px;
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 22px;
+    max-width: 15ch;
+  }
+
+  .hero p {
+    max-width: 56ch;
+    color: var(--slate);
+    font-size: 1.08rem;
+    margin: 0 0 32px;
+  }
+
+  .hero .cta {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .hero .cta a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  /* ---------- stats strip ---------- */
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .stats div {
+    padding: 28px 24px;
+    border-left: 1px solid var(--hairline);
+  }
+
+  .stats div:first-child { border-left: none; }
+
+  .stats .figure {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0 0 6px;
+  }
+
+  .stats .label {
+    color: var(--slate);
+    font-size: 0.88rem;
+    margin: 0;
+  }
+
+  /* ---------- sections ---------- */
+
+  section.block {
+    border-left: 2px solid var(--ink);
+    padding-left: 26px;
+    margin: 64px 0;
+  }
+
+  section.block h2 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0 0 20px;
+  }
+
+  section.block p {
+    max-width: 62ch;
+    margin: 0 0 16px;
+  }
+
+  section.block ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 62ch;
+  }
+
+  section.block li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  section.block li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: var(--slate);
+  }
+
+  /* ---------- selected work ---------- */
+
+  .work-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .work-item:first-child { padding-top: 0; }
+  .work-item:last-child { border-bottom: none; }
+
+  .work-item .title {
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+
+  .work-item .context {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--slate);
+    margin: 0 0 8px;
+  }
+
+  .work-item .desc {
+    color: var(--slate);
+    font-size: 0.96rem;
+    margin: 0;
+    max-width: 60ch;
+  }
+
+  /* ---------- connect ---------- */
+
+  .connect-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 62ch;
+  }
+
+  .connect-list a {
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--hairline);
+    padding: 10px 0;
+  }
+
+  .connect-list a span.sub {
+    color: var(--slate);
+    font-family: var(--mono);
+    font-size: 0.82rem;
+  }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    border-top: 1px solid var(--hairline);
+    padding: 28px 0 48px;
+  }
+
+  footer p {
+    color: var(--slate);
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  @media (max-width: 560px) {
+    .stats { grid-template-columns: 1fr; }
+    .stats div { border-left: none; border-top: 1px solid var(--hairline); }
+    .stats div:first-child { border-top: none; }
+    section.block { padding-left: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="name" href="#top">Ukelabuchi</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#focus">Focus</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#work">Work</a>
+      <a href="#connect">Connect</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap" id="top">
+
+  <section class="hero">
+    <p class="role">Senior Cloud &amp; Platform Engineer</p>
+    <h1>I build cloud platforms that hold up under pressure.</h1>
+    <p>Based in Ireland, with more than ten years across cloud architecture, security, and DevSecOps. I work with organisations that need senior-level platform expertise, either in-house or through independent consulting.</p>
+    <div class="cta">
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://maziconsults.com" target="_blank" rel="noopener">Mazi Consults</a>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div>
+      <p class="figure">10+</p>
+      <p class="label">years in cloud, platform, and security engineering</p>
+    </div>
+    <div>
+      <p class="figure">DevSecOps</p>
+      <p class="label">core focus, from pipeline security to platform governance</p>
+    </div>
+    <div>
+      <p class="figure">Ireland</p>
+      <p class="label">based, with experience in financial services and enterprise IT</p>
+    </div>
+  </div>
+
+  <section class="block" id="about">
+    <h2>About</h2>
+    <p>Ukelabuchi is a senior cloud and platform engineering professional with more than ten years of experience in cloud architecture, security, and DevSecOps. Their work has covered platform engineering, secure pipeline design, and infrastructure governance, with hands-on experience gained at organisations including Bank of Ireland and Microsoft.</p>
+    <p>They also run Mazi Consults, an independent IT and technology consulting practice for businesses that need senior-level cloud and security expertise without hiring full-time.</p>
+  </section>
+
+  <section class="block" id="focus">
+    <h2>Current focus</h2>
+    <ul>
+      <li>Designing secure CI/CD pipelines and strengthening supply chain governance for enterprise platforms</li>
+      <li>Standardising infrastructure as code with Terraform across cloud environments</li>
+      <li>Building deeper expertise in Azure security and identity, including Entra ID, Defender, and Purview</li>
+    </ul>
+  </section>
+
+  <section class="block" id="leadership">
+    <h2>Leadership &amp; community</h2>
+    <ul>
+      <li>Active member of Toastmasters, developing public speaking and communication</li>
+      <li>Volunteer with Ignite STEM, supporting STEM engagement</li>
+    </ul>
+  </section>
+
+  <section class="block" id="work">
+    <h2>Selected work</h2>
+    <div class="work-item">
+      <p class="title">Azure Landing Zone &amp; Terraform Standardisation</p>
+      <p class="context">Bank of Ireland</p>
+      <p class="desc">Re-architected the bank's Azure estate into fully declarative Terraform, bringing legacy, manually managed resources under IaC with remote state, CI validation, and Checkov scanning. Eliminated long-standing configuration drift and brought production and test environments to full parity.</p>
+    </div>
+    <div class="work-item">
+      <p class="title">GitOps Delivery Pipeline for Kubernetes</p>
+      <p class="context">GlobalLogic</p>
+      <p class="desc">Built an end-to-end GitOps pipeline for AKS: Azure DevOps built and scanned container images, and FluxCD synced them into dev, test, and prod from a separate manifest repository. Cut deployment errors by more than 70% and removed drift between environments entirely.</p>
+    </div>
+    <div class="work-item">
+      <p class="title">Pipeline Security &amp; Supply Chain Governance</p>
+      <p class="context">Bank of Ireland</p>
+      <p class="desc">Embedded Checkov scanning and Azure Policy enforcement directly into the CI/CD pipeline, so non-compliant infrastructure was blocked before it reached production. Cut supply-chain vulnerabilities by more than half and gave engineering leadership full compliance visibility.</p>
+    </div>
+  </section>
+
+  <section class="block" id="connect">
+    <h2>Connect</h2>
+    <div class="connect-list">
+      <a href="#" target="_blank" rel="noopener">LinkedIn <span class="sub">[add URL]</span></a>
+      <a href="#" target="_blank" rel="noopener">GitHub <span class="sub">[add URL]</span></a>
+      <a href="https://maziconsults.com" target="_blank" rel="noopener">Mazi Consults <span class="sub">maziconsults.com</span></a>
+      <a href="mailto:you@example.com">Email <span class="sub">[add address]</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Ukelabuchi, updated 2026.</p>
+  </div>
+</footer>
+
+</body>
+</html>
